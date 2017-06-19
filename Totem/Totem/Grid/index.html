@@ -1,0 +1,84 @@
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>La grille</title>
+	<link rel='stylesheet prefetch' href='js/jquery-ui.css'>
+	<link rel = "stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+   <div id ="check" style = "width:80px; height:80px; backgroundColor:blue;" ></div>
+ 	<main id = "main">
+ 	<h1>La fabrique d'objets libres</h1>
+
+    
+  	<section class='box container'>
+      <div class='header'>
+        <h2>Hope & Bike</h2>
+      </div>
+      <div class='content'>
+        <div>
+          <h3>Machine</h3>
+          <p>Matériau 1</p>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+  document.getElementById('check').addEventListener("click", function(){
+    document.body.style.backgroundImage = "url('')";
+    console.log("j'ai cliqué");
+  });
+  </script>
+  <script src='js/content.js'></script>
+	<script src='js/jquery.min.js'></script>
+	<script src='js/jquery-ui.min.js'></script>
+	<script src="js/index.js"></script>	
+	<script src="js/jquery-1.10.2.js"></script>
+  <script src="js/TweenMax.js"></script>
+  <script src="js/totem.js"></script> <!--JS qui génére le signe-->
+  
+  <script>
+   var phandb = document.getElementById("animcont1");
+   var article = document.getElementsByClassName("box")[0];
+   //var titleow = document.getElementById("title");
+
+//article.onclick = function(/*event*/){
+  /*event.target
+  event.target.querySelector('p')*/
+  
+  $(".box").on("click", function(event) {
+   
+    
+    var container = event.target;
+    
+    
+    
+    $(container).toggleClass('active');
+    console.log(container);
+    
+    if($(container).hasClass('active')){
+      $(".box").addClass('hidden');
+    $(container).removeClass('hidden');
+    
+    TweenMax.to('.hidden', 0.3, {opacity:0});
+    }else{
+      $(".box").removeClass('hidden');
+    
+    TweenMax.to('.box', 0.3, {opacity:1});
+      
+    }
+    
+    
+});
+  
+/*TweenMax.staggerTo(phandb, 0.3, {opacity:1, left:100, bottom:300, delay: 0.1}); 
+ }*/
+ 
+  </script>
+
+
+ 	</main>
+
+
+</body>
+</html>
