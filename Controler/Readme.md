@@ -6,8 +6,8 @@ Coded in JS with socket.io and johnny five
  
 
 
-![Schéma de connectique de l'arduino](https://github.com/Corinne-B/tOtem-Interface/blob/master/Controler/Sketch_Debug_Joystick_Arcade_Zippyy.jpg)
+![Schéma de connectique de l'arduino](https://github.com/Corinne-B/tOtem-Interface/blob/master/Controler/Sketch_Debug_Joystick_Controller.jpg)
 
-##Matériel utilisé
+**Matériel utilisé
 Arduino Uno
 Joystick Arcade "Zippyy"
