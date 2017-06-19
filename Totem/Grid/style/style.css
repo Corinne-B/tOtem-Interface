@@ -23,7 +23,6 @@ main{
 
 section{
   z-index: 90;
-  overflow: hidden;
   position: relative;
   width: 100%;
 
@@ -68,6 +67,12 @@ h2 {
   font-family: SourceSansPro-Bold, sans-serif;
   margin: 0;
   margin-bottom: 10px;
+  display:inline-block;
+}
+
+.header, .content{
+  
+  display:inline-block;
 }
 
 
@@ -79,7 +84,14 @@ body {
   background-position: 18px 11px;
 }
 
+.big_main{
+  
+  height: 5000px;
+  width: 5000px;
+}
+
 .box {
+  position:relative;
   margin: 0 auto;
   margin-top: 50px;
   margin-left: 0;
@@ -106,4 +118,28 @@ body {
   cursor: grabbing;
   cursor: -webkit-grabbing;
 }
+
+#descrihb{
+  color:red;
+}
+
+.container .content{
+  position: absolute;
+  display:none;
+  
+}
+
+.container.active .content{;
+  display:inline-block;
+  
+}
+
+
+
+
+span {
+    font-weight: bold;
+
+}
+
 
